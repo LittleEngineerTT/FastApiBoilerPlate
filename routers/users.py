@@ -15,9 +15,6 @@ config = get_config()
 # Set up logger
 logger = setup_logger("history.log")
 
-# Create status checker instance
-status_checker = StatusChecker(config["network"], logger=logger)
-
 
 @users.get("/users")
 def retrieve_users():
