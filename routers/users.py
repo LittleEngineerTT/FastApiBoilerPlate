@@ -13,7 +13,7 @@ users = APIRouter(
 config = get_config()
 
 # Set up logger
-logger = setup_logger("history.log")
+logger = setup_logger("config.log")
 
 
 @users.get("/users")
